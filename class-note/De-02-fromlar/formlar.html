@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>FORMLAR</h1>
+    <form action="result.html">
+
+    <!-- label ve inputlar birlikte kullanilir best praktisi bu ikisini bir div sarmalina almaktir -->
+    <div>
+    <label for="ad">AD:</label>
+    <input id="ad" type="text" name="isim" value="" placeholder="Lütfen isim giriniz" required>
+    <!-- name ve value backendciler icindir onlara bilgi veriyoruz-->
+    <!-- required: doldurulmasi zorunlu alanlar icin kulanilir -->
+    <br><br>
+
+    <label for="soyad">SOYAD:</label>
+    <input 
+    id="soyad" 
+    type="text" 
+    name="soyisim" 
+    value="" 
+    placeholder="Lütfen soyisim griniz" 
+    required>
+    </div>
+
+    <!-- PASSWORD -->
+    <br>
+    <div>
+        <label for="pass">PASSWORD:</label>
+        <input 
+        id="pass" 
+        type="pasword" 
+        name="password" 
+        value="" 
+        placeholder="Lütfen password griniz"
+        minlength="4"
+        maxlength="8"
+        required>
+    </div> <br>
+
+
+    <!-- RADIO BUTTON -->
+<div>
+    <label for="man">Erkek</label>
+    <input id="man"
+     name="cinsiyet"
+     value="erkek" 
+     type="radio" >
+    <label for="woman">Kadin</label>
+    <input id="woman" name="cinsiyet" value="kadin" type="radio">
+    <label for="none">None</label>
+    <input id="none" name="cinsiyet" value="none" type="radio" checkend>
+    <!-- radio= tek biri chekedilebilir. cheked att= ilk renderda tikli gelsin -->
+</div>
+<br>
+<!-- CHECKBOX -->
+
+<div>
+    <label>LÜTFEN FAVORI ARABANIZI SECINIZ</label> <br>
+    <label for="bmv">BMV</label>
+    <input id="bmv" type="checkbox" name="araba1" value="bmv-clx">
+
+    <label for="Mer">MERCEDES</label>
+    <input id="Mer" type="checkbox" name="araba2" value="mercedes">
+
+    <label for="audi">AUDI</label>
+    <input id="audi" type="checkbox" name="araba3" value="audi-cti">
+</div>
+<br>
+<div>
+    <input type="submit" value="Gonder">
+    <!-- <input type="reset">
+    <input type="text">
+     -->
+
+</div>
+  </form>
+</body>
+</html>
