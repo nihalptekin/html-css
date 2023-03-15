@@ -1,0 +1,36 @@
+*{
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p{
+    color: blue
+}
+/* #par{
+    color:aqua
+} */
+
+.center p span{
+    background-color: red;
+}
+
+/* ********************************** */
+.center p {
+    color: coral;
+}
+.center > p{
+    background-color: yellow;
+}
+.center {
+    background-color: green;
+}  
+/* normalde .center tüm paragraflari kaplar ama yukarida özel bir komut verdik bu yüzden öncelik neyse onu aldi ve renkleri sari yapti. geriye kalani da yesile cevirdi. */
+.secici ~ a{
+    background-color: orange;
+}
+
+/* üstteki yazim secici dilinden sonraki tüm a'lari alir.  */
+
+.secici + a {
+    background-color: blueviolet;
+}
+/* secici divindeki ilk a'yi alir */
