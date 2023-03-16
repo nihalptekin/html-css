@@ -1,0 +1,61 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    color: hsl(232, 64%, 60%);
+      /* r: red, g:green, b:blue. isteğe bağlı a :alpha=saydamlık kullanılabilir */
+        /* color: #f63232;  */
+        /* red yerine üstteki hex kodunu kullanabiliriz */
+       
+        /* hue:renk tonu, saturation:rengin yoğunluğu belirginliği, lightness:hafiflik ışık */
+    text-decoration: line-through;
+    text-decoration: underline;
+    text-decoration: overline;
+
+    /* line-throug:yazinin üst kismi ciz
+    underline:altini ciz: overline: üstünü ciz;*/
+text-decoration: dashed;
+text-decoration: dotted;
+text-decoration: double;
+text-decoration: wavy;
+text-decoration: cornflowerblue;
+/* text-decoration:  basligi altinda tüm özellikleri verebiliriz; */
+text-decoration: rgb(255, 51, 0) underline overline 10px wavy;
+text-align: center;
+
+/* TEK BIR STILLE BASLIKLARIN BOYUTUNU DEGISTIRMEK TRANSFORM ILE OLUR */
+text-transform: uppercase;
+text-transform: lowercase;
+text-transform: capitalize;
+
+/* KELIMELER ARASINDAKI BOSLUKLARI AYARLAMA */
+word-spacing: 15px;
+word-spacing: 50px;
+/* HARFLER ARASINDAKI BOSLUKLARI AYARLAMA */
+letter-spacing: 5px;
+
+} 
+p{
+    /* PARAGRAF BASI BOSLUGU YAPMA */
+    text-indent:20px;
+    /* PARAGRAFLAR ARASINI ACMA */
+    line-height: 30px;
+
+}
+li{
+    background-color: lightblue;
+}
+ul.makyaj{
+list-style-position: inside;
+/* UL'NIN NOKTALARINI ICERI ITER */
+list-style-type: "🍄";
+list-style-type: square;
+list-style-image:url(../assets/img);
+}
+h3{
+    text-align: right;
+    /* objelerin emojilerin vs yerlerini ters döndürür */
+    direction: rtl;
+    /* direction: ltr; */
+}

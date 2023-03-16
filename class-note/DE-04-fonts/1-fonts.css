@@ -1,0 +1,21 @@
+/* istersek css'te tesekkür de edebiliriz.  */
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Sofia+Sans+Semi+Condensed:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+.birinci{
+    font-family: 'Stick No Bills', sans-serif;
+    background-color: lightgray;
+    
+  
+}
+.menü{
+    font-size: 50px;
+    width: 250px;
+    text-align: center;
+}
+.aktif{
+    background-color: rgb(119, 220, 220);
+    font-family: "Sofia Sans Semi Condensed"
+}
+div{
+    background-color: pink;
+}

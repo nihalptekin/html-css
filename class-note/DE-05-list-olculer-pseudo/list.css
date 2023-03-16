@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@1,300&display=swap');
+
+*{
+    font-family: 'Archivo', sans-serif;
+}
+
+li{
+    background-color: rgb(179, 235, 186);
+    color: red;
+    /* li'lere verilen colordan a etkilenmez, a özel ilgi ister */
+}
+ul{
+    list-style-position: inside;
+    list-style-type: "🍋";
+}
+.aktif{
+    background-color: lightpink;
+}
+a{
+    color:rgb(5, 116, 110);
+    font-size: 25px;
+    text-decoration: none;
+    
+}
+/* HOVER:MAUSLA ÜZERINE GELINCE DEGISIKLIK YAPAR. */
+.aktif:hover{background-color: rgb(111, 104, 157);
+
+}
+/* LI'NIN ISTÜNE MAUS ILE GELINDIGINDE  */
+li:hover{
+    background-color: antiquewhite;
+    font-size:50px;
+    
+}
+
+a:hover{
+    color: black;
+}
