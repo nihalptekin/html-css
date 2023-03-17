@@ -30,7 +30,7 @@ p{
 
 /* üstteki yazim secici dilinden sonraki tüm a'lari alir.  */
 
-.secici + a {
+.secici + a{
     background-color: blueviolet;
 }
 /* secici divindeki ilk a'yi alir */

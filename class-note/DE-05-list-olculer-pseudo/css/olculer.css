@@ -1,0 +1,50 @@
+*{margin:0}
+.dede{
+    background-color: orange;
+    width: 50%; 
+
+}
+.baba{
+    background-color: red;
+    width: 50%;
+}
+
+.torun{
+    background-color: aquamarine;
+    width: 50vw;
+
+/* yüzdeler marginleri de yani kenardaki bosluklari da dikkate alir. ama viewport pixel üzerinden alir uzunlugu. bu da kenar bosluklari olmadan kullanmak demek. */
+}
+/* viewport ölcüleri tüm ekrani baz alir. Mesela 50 vw dersek tüm 1400px'lik pc ekranini baz alir ve 700 px'lik alani kapsar. % ise badynin 16pc'lik default marginlerinden arta kalan kismin %50'sini alir. Bu yüzden yüzdeler parent'i önemser her zaman partten gelen ölcün+n yüzdesini alir ama viewportlar her durumda ekranin yüzdesini alir.  */
+
+/* <------EM-----> */
+.tek{
+    font-size: 4.5 em;
+    /* 1 em = 16px
+    16 * 4.5 =72*/
+}
+.anane{
+    font-size: 3em;
+    color: red;
+    /* 3em=3*16=48px */
+}
+.anne{
+  font-size: 0.5em;
+  /* 48/2=24px. Cünkü ona atasindan(anane)48 miras kaldi. bu demektir ki anane ile baglantili oldugu icin onun boyutunun yarisini aldi.  */
+}
+.cocuk{
+font-size: 3em;
+/* 24*3=72px Normalde 1 em 16pxidr ama burada anneninki 24 px oldugu icin onun üzerinden em deger aldi*/ 
+}
+
+/* <-------REM---------> */
+/* rem icin parent child yok ana element e göre default 16px alir. 1 rem = 16px */
+
+.div1{
+    font-size: 2rem;
+}
+.div2{
+    font-size: 2rem;
+}
+
+/* 1 rem 16pxdir ama bodydeki default olan(16px) pixeli degisirsek o zaman bodydekini baz alir. mesela bady 30px ise 1 rem artik 30 px olmustur.  */

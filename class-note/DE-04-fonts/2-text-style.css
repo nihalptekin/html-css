@@ -47,7 +47,7 @@ li{
     background-color: lightblue;
 }
 ul.makyaj{
-list-style-position: inside;
+list-style-position:inside;
 /* UL'NIN NOKTALARINI ICERI ITER */
 list-style-type: "🍄";
 list-style-type: square;

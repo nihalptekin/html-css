@@ -1,0 +1,85 @@
+table{
+    width: 100%;
+    height: 300px;
+    font-size: 40px;
+}
+
+.liste tr:nth-child(odd){
+    background-color: pink;
+   color: yellow;
+}
+
+/* .liste yazinca yukaridakini daha da özellestirdim. detali yazdikca önceligi artti. bu yüden digerlerine yaptigimiz degisiklik geri planda kaldi.  */
+
+.liste tr:nth-child(3){
+    background-color: aqua;
+}
+/* buraya da .liste yazinca o da öncelikli oldu digeri ile ayni sirada öncelige sahip olunca verdigim rengi kabul etti.  */
+
+td:first-child{
+    color: red;
+    /* no sutunu kirmiziya dönusur */
+    font-weight: 900;
+}
+td:last-child{
+    font-style: italic;
+}
+tr::before, tr::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 800;
+    content:"😇";
+    content:"\1F606";   
+    color: red;
+    font-size: 30px;
+    /* content kismina emoji yapistirabiliriz ama bazi emojler stil kabul etmiyor. Bu yüzden https://symbl.cc/en/collections/top-emoji/ bu adresten emojinin CSS kodunu almak daha sagliklidir.  */
+}
+
+tr:nth-child(3)::after, tr:nth-child(3)::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 800;
+    content:"🍭";
+    /* content:"🌍"; */
+    /* content: "💜"; */
+    /* content:"\1F49C"; */
+}
+td:hover{
+    background-color: lightgreen;
+    color:purple;
+}
+tr:hover{
+    background-color: gray;
+    color: blue;
+}
+
+/* tdlere verilen stilleri tr:hover ile ezemezsiniz ama trlere verilen stilleri td:hover ile ezebilirsiniz. */
+
+button{
+    cursor: pointer;
+}
+.fa-solid{
+    font-size: 40px;
+    
+}
+/* 
+iki ayni kisasin sonuna bir kelime daha ekledik ve sadece o kelimeyi yazinca bir tek o elementte degisiklik yapti */
+.icon{
+    color:orange;
+    /* vertical-align: middle; */
+
+}
+a{
+    color: red;
+}
+/* daha önce ziyaret edildiyse rengi degissin */
+a:visited{
+    color: orange;
+}
+
+/* mausta tusa bastigimda rengi degissin */
+a:active{
+    color: blue;
+}
+a:hover{
+    font-size: 50px;
+    background-color: salmon;
+}
