@@ -1,0 +1,62 @@
+/* YATAY-MENÜ */
+
+.yatay-menu ul {
+    list-style-type: none;
+}
+
+.yatay-menu ul li {
+    background-color: bisque;
+    width: 8rem;
+    height: 5rem;
+    margin: 0.5rem;
+    display: inline-block;
+
+    /* sadece inline yazsaydim widh heigt margin giderdi o yüzden sadece kirmizi alan yanyana gelirdi */
+
+     /** li block olduğu için normalde alt altalar. yanyana dizilsin ama width height margin almaya da devam etsin istiyorsak display:inline-block; */
+
+     /* text-align: center;
+     vertical-align:middle; */
+}
+
+
+a{
+    text-align: center;
+    background-color: red;
+    display:inline-block;
+    width: 6rem;
+    padding: 1rem;
+
+/** sağ sol 1 padding ve 6rem width ile parent ı gibi 8rem eder */
+text-decoration: none;
+   
+   
+}
+a:hover{
+    background-color: aqua;
+}
+a:active{
+    color: white;
+}
+
+/* ACILIR MENU */
+
+.ul1{
+    background-color: yellow;
+    display: none;
+}
+
+
+/* acilir menu'nun üzerine hoverla gel ve ul1'de degisiklik yap */
+.acilir-menu:hover .ul1{
+    display: block;
+
+}
+
+/* .acilir-menu:hover{
+    background-color: green;
+}
+
+.ul1 .bir:hover{
+    background-color: pink;
+}  */
