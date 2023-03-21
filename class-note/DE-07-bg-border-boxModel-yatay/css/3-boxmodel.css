@@ -1,0 +1,30 @@
+.olcusuz-box{
+    background-color: orange;
+    border: 15px solid red;
+    padding: 50px;
+    margin: 20px 85px;
+    font-size: 2rem;
+    /* belli bir widht olmadigi icin alttaki kod gecersiz */
+    box-sizing: border-box;
+}
+
+.olcusuz-content{
+    background-color: yellow;
+    border: 15px solid red;
+    padding: 50px;
+    margin: 20px 85px;
+    font-size: 2rem;
+    /* belli bir widht olmadigi icin alttaki kod gecersiz */
+    box-sizing: border-box;
+
+}
+
+.box{
+    background-color: lightskyblue;
+    border: 15px solid red;
+    padding: 50px;
+    margin: 20px 85px;
+    font-size: 2rem;
+    width: 300px;
+    height: 300px;
+}

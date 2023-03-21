@@ -1,0 +1,62 @@
+/*! border outline farkları */
+/* 1)border, border-radius özelliği ile yuvarlatılmış köşeleri destekler  outline yapmaz. */
+/* 2)border la istersek Yalnızca bir tarafı şekillendirme vardır, outline da yok */
+/* 3)outline,  -offset özelliğiyle offset'i (border ve outline arası boşluk) destekler  */
+/* 4)border, kutu modelinin bir parçasıdır, bu nedenle öğenin boyutuna göre sayılır, büyüdükçe komşusunu iter. outline, kutu modelinin bir parçası olmadığı için yakındaki öğeleri etkilemez, üstüne çıkar. öğenin border ının dışına çizilir ve diğer içerikle örtüşebilir.*/
+
+/*outline ın pratik kullanımı şeffaflıkla ilgilidir. Arka planı olan bir üst öğeniz (mesela body ye bir image verdiysek) varsa,ve bu resim border dan bile görünsün istiyorsak (border ının saydam olmasını istiyorsanız), "border" yerine "outline" kullanmalısınız. Bir border şeffaf olabilse de, ebeveynin değil çocuğun (seffaf taki monalisa yı) arka planını gösterir */
+
+.msg{
+    display: inline-block;
+    margin: 1rem;
+}
+
+.msg1{
+    border:3px solid red;
+}
+
+.msg2{
+    border:3px dashed blue;
+}
+
+.msg3{
+    border-right: 3px dotted red;
+    border-left: 3px solid blue;
+}
+.msg4{
+    border:9px outset red;
+}
+
+.msg5{
+    border:9px inset red; 
+    background-color: rgb(214, 169, 86);
+    border-radius: 5px;
+    border-radius: 50px 0;
+    padding: 1rem;
+
+}
+.msg6{
+    border:15px groove salmon;
+    background-color: hsla(108, 67%, 51%, 0.473);
+   outline: 15px groove cyan;
+   outline-offset:50px;
+}
+
+.msg7{
+    border: 15px ridge salmon;
+    border-radius: 30%;
+}
+.msg8{
+    border: 3px solid gray;
+    background-color: pink;
+width: 3.5rem;
+height: 3.5rem;
+padding: 2rem;
+ border-radius: 50%;
+}
+
+.seffaf{
+    background-image: url(../img/monalisa.jpeg);
+border: 7px solid rgba(161, 155, 155, 0.553);
+outline: 20px solid rgba(60, 59, 59, 0.819);
+}

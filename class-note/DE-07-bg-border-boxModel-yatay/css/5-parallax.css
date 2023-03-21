@@ -1,0 +1,16 @@
+.bg{
+    height: 70vh;
+    background-size: cover;
+}
+
+.div1{
+    background-image: url(../img/monalisa.jpeg);
+    background-position: center center;
+    /* parallax efectini alttaki kod verir */
+    background-attachment: fixed;
+}
+
+.div2{background-image: url("https://cdn.pixabay.com/photo/2022/07/15/20/13/strawberries-7323943__480.jpg");
+    background-attachment: fixed;
+
+}
