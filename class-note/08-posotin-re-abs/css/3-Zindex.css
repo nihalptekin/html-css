@@ -1,0 +1,40 @@
+.box{
+    width: 7rem;
+    height: 7rem;
+    border: 1px solid black;
+}
+
+/* Z INDEX KULLANMAK ICIN MUTLAKA BIR POSITION ÖZELLGIGI VERMEMIZ LAZIM */
+.box1{
+    background-color: coral;
+    position: absolute;
+    left: 50px;
+    z-index: -1;
+    
+    /* opacity: 0.5; */
+}
+
+.box2{
+    background-color: lightgreen;
+    position: absolute;
+    left: 70px;
+    top: 50px;
+    z-index: 2;
+    /* opacity: 0.5; */
+}
+
+.box3{
+    background-color: lightskyblue;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    z-index: 500;
+}
+
+.box4{
+    background-color: lightpink;
+    position: absolute;
+/* default degeri sifirdir. bu yüzden eksi deger verdigimizde hic deger verilmeyenlerin arkasinda kalir. Cünkü hic deger verilmeyenler 0 olarak default degerindedir. */
+    z-index: -4;
+}
+
