@@ -1,0 +1,38 @@
+P{
+    height: 10vh;
+}
+
+.header1{
+    background-image: linear-gradient(yellow, green );
+}
+
+.header2{
+
+    background-image: linear-gradient(yellow, rgb(179, 0, 255))
+}
+
+.header3{
+
+    background-image: linear-gradient(to right, yellow, lightgreen,rgb(144, 0, 255))
+}
+
+.header4{
+    background-image: linear-gradient(45deg,yellow, lightgreen,rgb(144, 0, 255) )
+}
+
+.header5{
+    background-image: radial-gradient(yellow 20%, lightgreen 50%,rgb(144, 0, 255) )
+}
+
+/* tekrarli gecis. Bunun icin ölcü vermemiz gerekir*/
+.header6{
+    background-image: repeating-radial-gradient(yellow, lightgreen 15%,rgb(144, 0, 255)20%)
+}
+
+/* linear-gradient= yukaridan asagiya
+radial-gradient=circle yuvarlak yapar.  */
+
+.header7{
+    background-image:linear-gradient( to right, #7622da 11%, #47c6eb 11%, #47c6eb 29%, #ed5f1f 29%, #ed5f1f 60%, #f59f28 60%, #f59f28 75%, #6b1e5b 75%, 88%, #45b794 88%, #45b794 100% ) ;
+  }
+  /* 0-11= #7622da. 11-29=#47c6eb. 29-60=#ed5f1f. 60-75=#f59f28. 75-88=#6b1e5b. 88-100=#45b794 */
